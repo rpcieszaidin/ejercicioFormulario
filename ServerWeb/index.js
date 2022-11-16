@@ -15,6 +15,10 @@ let config = {
         },
         {
             "type" : "checkbox" 
+        },
+        {
+            "type" : "checkbox",
+            "target" : "e2"
         }
     ]
 }
@@ -22,8 +26,3 @@ let formUI = new FormUI();
 formUI.init(config); /*
 formUI.draw(document.getElementById("ejemplo"));*/
 console.log(document.querySelector("#myform"));
-let uiCheck=document.getElementById("e1");
-uiCheck.addEventListener("click",()=>{
-    uiCheck.classList.toggle("checked");
-    }
-);
